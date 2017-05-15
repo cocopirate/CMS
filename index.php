@@ -43,7 +43,7 @@ $(document).ready(function(){
 		$('#workspace').attr('src','layout.php?op=welcome');
 	}
 	$('#iframe_refresh').click(function(){
-		var fr = document.frames ? document.frames("workspace") : document.getElementById("workspace").contentWindow;;
+		var fr = document.frames ? document.frames("workspace") : document.getElementById("workspace").contentWindow;
 		fr.location.reload();
 	});
 
@@ -209,150 +209,131 @@ function addFavorite(url, title) {
 <div id="dialog" style="display:none">
   <div class="title">
     <h3>管理中心导航</h3>
-    <span><a href="JavaScript:void(0);" onclick="closeBg();">关闭</a></span> </div>
+    <span><a href="JavaScript:void(0);" onclick="closeBg();">关闭</a></span>
+  </div>
   <div class="content">
     <dl>
-  <dt>设置</dt>
-        <dd><a href="javascript:void(0)" onclick="openItem('base,setting,setting')">站点设置</a></dd>
-        <dd><a href="javascript:void(0)" onclick="openItem('qq,account,setting')">账号同步</a></dd>
-        <dd><a href="javascript:void(0)" onclick="openItem('param,upload,setting')">上传设置</a></dd>
-        <dd><a href="javascript:void(0)" onclick="openItem('seo,setting,setting')">SEO设置</a></dd>
-        <dd><a href="javascript:void(0)" onclick="openItem('email,message,setting')">邮箱短信</a></dd>
-        <dd><a href="javascript:void(0)" onclick="openItem('system,payment,setting')">支付方式</a></dd>
-        <dd><a href="javascript:void(0)" onclick="openItem('admin,admin,setting')">权限设置</a></dd>
-        <dd><a href="javascript:void(0)" onclick="openItem('index,express,setting')">快递公司</a></dd>
-        <dd><a href="javascript:void(0)" onclick="openItem('waybill_list,waybill,setting')">运单模板</a></dd>
-        <dd><a href="javascript:void(0)" onclick="openItem('area,area,setting')">地区管理</a></dd>
-        <dd><a href="javascript:void(0)" onclick="openItem('index,offpay_area,setting')">配送地区</a></dd>
-        <dd><a href="javascript:void(0)" onclick="openItem('clear,cache,setting')">清理缓存</a></dd>
-        <dd><a href="javascript:void(0)" onclick="openItem('db,db,setting')">数据备份</a></dd>
-        <dd><a href="javascript:void(0)" onclick="openItem('perform,perform,setting')">性能优化</a></dd>
-        <dd><a href="javascript:void(0)" onclick="openItem('search,search,setting')">搜索设置</a></dd>
-        <dd><a href="javascript:void(0)" onclick="openItem('list,admin_log,setting')">操作日志</a></dd>
-         </dl>
+      <dt>设置</dt>
+      <dd><a href="javascript:void(0)" onclick="openItem('base,setting,setting')">站点设置</a></dd>
+      <dd><a href="javascript:void(0)" onclick="openItem('qq,account,setting')">账号同步</a></dd>
+      <dd><a href="javascript:void(0)" onclick="openItem('param,upload,setting')">上传设置</a></dd>
+      <dd><a href="javascript:void(0)" onclick="openItem('seo,setting,setting')">SEO设置</a></dd>
+      <dd><a href="javascript:void(0)" onclick="openItem('email,message,setting')">邮箱短信</a></dd>
+      <dd><a href="javascript:void(0)" onclick="openItem('system,payment,setting')">支付方式</a></dd>
+      <dd><a href="javascript:void(0)" onclick="openItem('admin,admin,setting')">权限设置</a></dd>
+      <dd><a href="javascript:void(0)" onclick="openItem('index,express,setting')">快递公司</a></dd>
+      <dd><a href="javascript:void(0)" onclick="openItem('waybill_list,waybill,setting')">运单模板</a></dd>
+      <dd><a href="javascript:void(0)" onclick="openItem('area,area,setting')">地区管理</a></dd>
+      <dd><a href="javascript:void(0)" onclick="openItem('index,offpay_area,setting')">配送地区</a></dd>
+      <dd><a href="javascript:void(0)" onclick="openItem('clear,cache,setting')">清理缓存</a></dd>
+      <dd><a href="javascript:void(0)" onclick="openItem('db,db,setting')">数据备份</a></dd>
+      <dd><a href="javascript:void(0)" onclick="openItem('perform,perform,setting')">性能优化</a></dd>
+      <dd><a href="javascript:void(0)" onclick="openItem('search,search,setting')">搜索设置</a></dd>
+      <dd><a href="javascript:void(0)" onclick="openItem('list,admin_log,setting')">操作日志</a></dd>
+    </dl>
     <dl>
-  <dt>商品</dt>
-        <dd><a href="javascript:void(0)" onclick="openItem('goods_class,goods_class,goods')">分类管理</a></dd>
-        <dd><a href="javascript:void(0)" onclick="openItem('brand,brand,goods')">品牌管理</a></dd>
-        <dd><a href="javascript:void(0)" onclick="openItem('goods,goods,goods')">商品管理</a></dd>
-        <dd><a href="javascript:void(0)" onclick="openItem('type,type,goods')">类型管理</a></dd>
-        <dd><a href="javascript:void(0)" onclick="openItem('spec,spec,goods')">规格管理</a></dd>
-        <dd><a href="javascript:void(0)" onclick="openItem('list,goods_album,goods')">图片空间</a></dd>
-        <dd><a href="javascript:void(0)" onclick="openItem('index,web_channel,goods')">频道管理</a></dd>
-         </dl>
+      <dt>商品</dt>
+      <dd><a href="javascript:void(0)" onclick="openItem('goods_class,goods_class,goods')">分类管理</a></dd>
+      <dd><a href="javascript:void(0)" onclick="openItem('brand,brand,goods')">品牌管理</a></dd>
+      <dd><a href="javascript:void(0)" onclick="openItem('goods,goods,goods')">商品管理</a></dd>
+      <dd><a href="javascript:void(0)" onclick="openItem('type,type,goods')">类型管理</a></dd>
+      <dd><a href="javascript:void(0)" onclick="openItem('spec,spec,goods')">规格管理</a></dd>
+      <dd><a href="javascript:void(0)" onclick="openItem('list,goods_album,goods')">图片空间</a></dd>
+      <dd><a href="javascript:void(0)" onclick="openItem('index,web_channel,goods')">频道管理</a></dd>
+    </dl>
     <dl>
-  <dt>店铺</dt>
-        <dd><a href="javascript:void(0)" onclick="openItem('store,store,store')">店铺管理</a></dd>
-        <dd><a href="javascript:void(0)" onclick="openItem('store_grade,store_grade,store')">店铺等级</a></dd>
-        <dd><a href="javascript:void(0)" onclick="openItem('store_class,store_class,store')">店铺分类</a></dd>
-        <dd><a href="javascript:void(0)" onclick="openItem('store_domain_setting,domain,store')">二级域名</a></dd>
-        <dd><a href="javascript:void(0)" onclick="openItem('stracelist,sns_strace,store')">店铺动态</a></dd>
-        <dd><a href="javascript:void(0)" onclick="openItem('help_store,help_store,store')">店铺帮助</a></dd>
-        <dd><a href="javascript:void(0)" onclick="openItem('edit_info,store_joinin,store')">开店首页</a></dd>
-        <dd><a href="javascript:void(0)" onclick="openItem('list,ownshop,store')">自营店铺</a></dd>
-         </dl>
+      <dt>店铺</dt>
+      <dd><a href="javascript:void(0)" onclick="openItem('store,store,store')">店铺管理</a></dd>
+      <dd><a href="javascript:void(0)" onclick="openItem('store_grade,store_grade,store')">店铺等级</a></dd>
+      <dd><a href="javascript:void(0)" onclick="openItem('store_class,store_class,store')">店铺分类</a></dd>
+      <dd><a href="javascript:void(0)" onclick="openItem('store_domain_setting,domain,store')">二级域名</a></dd>
+      <dd><a href="javascript:void(0)" onclick="openItem('stracelist,sns_strace,store')">店铺动态</a></dd>
+      <dd><a href="javascript:void(0)" onclick="openItem('help_store,help_store,store')">店铺帮助</a></dd>
+      <dd><a href="javascript:void(0)" onclick="openItem('edit_info,store_joinin,store')">开店首页</a></dd>
+      <dd><a href="javascript:void(0)" onclick="openItem('list,ownshop,store')">自营店铺</a></dd>
+    </dl>
     <dl>
-  <dt>会员</dt>
-        <dd><a href="javascript:void(0)" onclick="openItem('member,member,member')">会员管理</a></dd>
-        <dd><a href="javascript:void(0)" onclick="openItem('index,member_grade,member')">会员级别</a></dd>
-        <dd><a href="javascript:void(0)" onclick="openItem('index,exppoints,member')">经验值管理</a></dd>
-        <dd><a href="javascript:void(0)" onclick="openItem('notice,notice,member')">会员通知</a></dd>
-        <dd><a href="javascript:void(0)" onclick="openItem('addpoints,points,member')">积分管理</a></dd>
-        <dd><a href="javascript:void(0)" onclick="openItem('predeposit,predeposit,member')">预存款</a></dd>
-        <dd><a href="javascript:void(0)" onclick="openItem('sharesetting,sns_sharesetting,member')">分享绑定</a></dd>
-        <dd><a href="javascript:void(0)" onclick="openItem('class_list,sns_malbum,member')">会员相册</a></dd>
-        <dd><a href="javascript:void(0)" onclick="openItem('tracelist,snstrace,member')">买家动态</a></dd>
-        <dd><a href="javascript:void(0)" onclick="openItem('member_tag,sns_member,member')">会员标签</a></dd>
-        <dd><a href="javascript:void(0)" onclick="openItem('chat_log,chat_log,member')">聊天记录</a></dd>
-         </dl>
+      <dt>会员</dt>
+      <dd><a href="javascript:void(0)" onclick="openItem('member,member,member')">会员管理</a></dd>
+      <dd><a href="javascript:void(0)" onclick="openItem('index,member_grade,member')">会员级别</a></dd>
+      <dd><a href="javascript:void(0)" onclick="openItem('index,exppoints,member')">经验值管理</a></dd>
+      <dd><a href="javascript:void(0)" onclick="openItem('notice,notice,member')">会员通知</a></dd>
+      <dd><a href="javascript:void(0)" onclick="openItem('addpoints,points,member')">积分管理</a></dd>
+      <dd><a href="javascript:void(0)" onclick="openItem('predeposit,predeposit,member')">预存款</a></dd>
+      <dd><a href="javascript:void(0)" onclick="openItem('sharesetting,sns_sharesetting,member')">分享绑定</a></dd>
+      <dd><a href="javascript:void(0)" onclick="openItem('class_list,sns_malbum,member')">会员相册</a></dd>
+      <dd><a href="javascript:void(0)" onclick="openItem('tracelist,snstrace,member')">买家动态</a></dd>
+      <dd><a href="javascript:void(0)" onclick="openItem('member_tag,sns_member,member')">会员标签</a></dd>
+      <dd><a href="javascript:void(0)" onclick="openItem('chat_log,chat_log,member')">聊天记录</a></dd>
+    </dl>
     <dl>
-  <dt>交易</dt>
-        <dd><a href="javascript:void(0)" onclick="openItem('index,order,trade')">实物订单</a></dd>
-        <dd><a href="javascript:void(0)" onclick="openItem('index,vr_order,trade')">虚拟订单</a></dd>
-        <dd><a href="javascript:void(0)" onclick="openItem('refund_manage,refund,trade')">退款管理</a></dd>
-        <dd><a href="javascript:void(0)" onclick="openItem('return_manage,return,trade')">退货管理</a></dd>
-        <dd><a href="javascript:void(0)" onclick="openItem('refund_manage,vr_refund,trade')">虚拟订单退款</a></dd>
-        <dd><a href="javascript:void(0)" onclick="openItem('consulting,consulting,trade')">咨询管理</a></dd>
-        <dd><a href="javascript:void(0)" onclick="openItem('inform_list,inform,trade')">举报管理</a></dd>
-        <dd><a href="javascript:void(0)" onclick="openItem('evalgoods_list,evaluate,trade')">评价管理</a></dd>
-        <dd><a href="javascript:void(0)" onclick="openItem('complain_new_list,complain,trade')">投诉管理</a></dd>
-         </dl>
+      <dt>交易</dt>
+      <dd><a href="javascript:void(0)" onclick="openItem('index,order,trade')">实物订单</a></dd>
+      <dd><a href="javascript:void(0)" onclick="openItem('index,vr_order,trade')">虚拟订单</a></dd>
+      <dd><a href="javascript:void(0)" onclick="openItem('refund_manage,refund,trade')">退款管理</a></dd>
+      <dd><a href="javascript:void(0)" onclick="openItem('return_manage,return,trade')">退货管理</a></dd>
+      <dd><a href="javascript:void(0)" onclick="openItem('refund_manage,vr_refund,trade')">虚拟订单退款</a></dd>
+      <dd><a href="javascript:void(0)" onclick="openItem('consulting,consulting,trade')">咨询管理</a></dd>
+      <dd><a href="javascript:void(0)" onclick="openItem('inform_list,inform,trade')">举报管理</a></dd>
+      <dd><a href="javascript:void(0)" onclick="openItem('evalgoods_list,evaluate,trade')">评价管理</a></dd>
+      <dd><a href="javascript:void(0)" onclick="openItem('complain_new_list,complain,trade')">投诉管理</a></dd>
+    </dl>
     <dl>
-  <dt>网站</dt>
-        <dd><a href="javascript:void(0)" onclick="openItem('article_class,article_class,website')">文章分类</a></dd>
-        <dd><a href="javascript:void(0)" onclick="openItem('article,article,website')">文章管理</a></dd>
-        <dd><a href="javascript:void(0)" onclick="openItem('document,document,website')">会员协议</a></dd>
-        <dd><a href="javascript:void(0)" onclick="openItem('navigation,navigation,website')">页面导航</a></dd>
-        <dd><a href="javascript:void(0)" onclick="openItem('ap_manage,adv,website')">广告管理</a></dd>
-        <dd><a href="javascript:void(0)" onclick="openItem('web_config,web_config,website')">首页管理</a></dd>
-        <dd><a href="javascript:void(0)" onclick="openItem('rec_list,rec_position,website')">推荐位</a></dd>
-        <dd><a href="javascript:void(0)" onclick="openItem('link,link,website')">友情连接</a></dd>
-         </dl>
+      <dt>网站</dt>
+      <dd><a href="javascript:void(0)" onclick="openItem('article_class,article_class,website')">文章分类</a></dd>
+      <dd><a href="javascript:void(0)" onclick="openItem('article,article,website')">文章管理</a></dd>
+      <dd><a href="javascript:void(0)" onclick="openItem('document,document,website')">会员协议</a></dd>
+      <dd><a href="javascript:void(0)" onclick="openItem('navigation,navigation,website')">页面导航</a></dd>
+      <dd><a href="javascript:void(0)" onclick="openItem('ap_manage,adv,website')">广告管理</a></dd>
+      <dd><a href="javascript:void(0)" onclick="openItem('web_config,web_config,website')">首页管理</a></dd>
+      <dd><a href="javascript:void(0)" onclick="openItem('rec_list,rec_position,website')">推荐位</a></dd>
+      <dd><a href="javascript:void(0)" onclick="openItem('link,link,website')">友情连接</a></dd>
+    </dl>
     <dl>
-  <dt>运营</dt>
-        <dd><a href="javascript:void(0)" onclick="openItem('setting,operation,operation')">基本设置</a></dd>
-        <dd><a href="javascript:void(0)" onclick="openItem('groupbuy_template_list,groupbuy,operation')">抢购管理</a></dd>
-        <dd><a href="javascript:void(0)" onclick="openItem('index,vr_groupbuy,operation')">虚拟抢购设置</a></dd>
-        <dd><a href="javascript:void(0)" onclick="openItem('xianshi_apply,promotion_xianshi,operation')">限时折扣</a></dd>
-        <dd><a href="javascript:void(0)" onclick="openItem('mansong_apply,promotion_mansong,operation')">满即送</a></dd>
-        <dd><a href="javascript:void(0)" onclick="openItem('bundling_list,promotion_bundling,operation')">优惠套装</a></dd>
-        <dd><a href="javascript:void(0)" onclick="openItem('goods_list,promotion_booth,operation')">推荐展位</a></dd>
-        <dd><a href="javascript:void(0)" onclick="openItem('voucher_apply,voucher,operation')">代金券</a></dd>
-        <dd><a href="javascript:void(0)" onclick="openItem('index,bill,operation')">结算管理</a></dd>
-        <dd><a href="javascript:void(0)" onclick="openItem('index,vr_bill,operation')">虚拟订单结算</a></dd>
-        <dd><a href="javascript:void(0)" onclick="openItem('activity,activity,operation')">活动管理</a></dd>
-        <dd><a href="javascript:void(0)" onclick="openItem('pointprod,pointprod,operation')">兑换礼品</a></dd>
-        <dd><a href="javascript:void(0)" onclick="openItem('index,mall_consult,operation')">平台客服</a></dd>
-        <dd><a href="javascript:void(0)" onclick="openItem('index,rechargecard,operation')">平台充值卡</a></dd>
-        <dd><a href="javascript:void(0)" onclick="openItem('index,delivery,operation')">物流自提服务站</a></dd>
-         </dl>
+      <dt>运营</dt>
+      <dd><a href="javascript:void(0)" onclick="openItem('setting,operation,operation')">基本设置</a></dd>
+      <dd><a href="javascript:void(0)" onclick="openItem('groupbuy_template_list,groupbuy,operation')">抢购管理</a></dd>
+      <dd><a href="javascript:void(0)" onclick="openItem('index,vr_groupbuy,operation')">虚拟抢购设置</a></dd>
+      <dd><a href="javascript:void(0)" onclick="openItem('xianshi_apply,promotion_xianshi,operation')">限时折扣</a></dd>
+      <dd><a href="javascript:void(0)" onclick="openItem('mansong_apply,promotion_mansong,operation')">满即送</a></dd>
+      <dd><a href="javascript:void(0)" onclick="openItem('bundling_list,promotion_bundling,operation')">优惠套装</a></dd>
+      <dd><a href="javascript:void(0)" onclick="openItem('goods_list,promotion_booth,operation')">推荐展位</a></dd>
+      <dd><a href="javascript:void(0)" onclick="openItem('voucher_apply,voucher,operation')">代金券</a></dd>
+      <dd><a href="javascript:void(0)" onclick="openItem('index,bill,operation')">结算管理</a></dd>
+      <dd><a href="javascript:void(0)" onclick="openItem('index,vr_bill,operation')">虚拟订单结算</a></dd>
+      <dd><a href="javascript:void(0)" onclick="openItem('activity,activity,operation')">活动管理</a></dd>
+      <dd><a href="javascript:void(0)" onclick="openItem('pointprod,pointprod,operation')">兑换礼品</a></dd>
+      <dd><a href="javascript:void(0)" onclick="openItem('index,mall_consult,operation')">平台客服</a></dd>
+      <dd><a href="javascript:void(0)" onclick="openItem('index,rechargecard,operation')">平台充值卡</a></dd>
+      <dd><a href="javascript:void(0)" onclick="openItem('index,delivery,operation')">物流自提服务站</a></dd>
+      </dl>
     <dl>
-  <dt>统计</dt>
-        <dd><a href="javascript:void(0)" onclick="openItem('general,stat_general,stat')">概述及设置</a></dd>
-        <dd><a href="javascript:void(0)" onclick="openItem('scale,stat_industry,stat')">行业分析</a></dd>
-        <dd><a href="javascript:void(0)" onclick="openItem('newmember,stat_member,stat')">会员统计</a></dd>
-        <dd><a href="javascript:void(0)" onclick="openItem('newstore,stat_store,stat')">店铺统计</a></dd>
-        <dd><a href="javascript:void(0)" onclick="openItem('income,stat_trade,stat')">销量分析</a></dd>
-        <dd><a href="javascript:void(0)" onclick="openItem('pricerange,stat_goods,stat')">商品分析</a></dd>
-        <dd><a href="javascript:void(0)" onclick="openItem('promotion,stat_marketing,stat')">营销分析</a></dd>
-        <dd><a href="javascript:void(0)" onclick="openItem('refund,stat_aftersale,stat')">售后分析</a></dd>
-         </dl>
+      <dt>统计</dt>
+      <dd><a href="javascript:void(0)" onclick="openItem('general,stat_general,stat')">概述及设置</a></dd>
+      <dd><a href="javascript:void(0)" onclick="openItem('scale,stat_industry,stat')">行业分析</a></dd>
+      <dd><a href="javascript:void(0)" onclick="openItem('newmember,stat_member,stat')">会员统计</a></dd>
+      <dd><a href="javascript:void(0)" onclick="openItem('newstore,stat_store,stat')">店铺统计</a></dd>
+      <dd><a href="javascript:void(0)" onclick="openItem('income,stat_trade,stat')">销量分析</a></dd>
+      <dd><a href="javascript:void(0)" onclick="openItem('pricerange,stat_goods,stat')">商品分析</a></dd>
+      <dd><a href="javascript:void(0)" onclick="openItem('promotion,stat_marketing,stat')">营销分析</a></dd>
+      <dd><a href="javascript:void(0)" onclick="openItem('refund,stat_aftersale,stat')">售后分析</a></dd>
+    </dl>
     <dl>
-  <dt>闲置</dt>
-        <dd><a href="javascript:void(0)" onclick="openItem('flea_index,flea_index,flea')">SEO设置</a></dd>
-        <dd><a href="javascript:void(0)" onclick="openItem('flea_class,flea_class,flea')">分类管理</a></dd>
-        <dd><a href="javascript:void(0)" onclick="openItem('flea_class_index,flea_class_index,flea')">首页分类管理</a></dd>
-        <dd><a href="javascript:void(0)" onclick="openItem('flea,flea,flea')">闲置管理</a></dd>
-        <dd><a href="javascript:void(0)" onclick="openItem('flea_region,flea_region,flea')">地区管理</a></dd>
-        <dd><a href="javascript:void(0)" onclick="openItem('adv_manage,flea_index,flea')">闲置幻灯</a></dd>
-         </dl>
-    <dl>
-  <dt>手机端</dt>
-        <dd><a href="javascript:void(0)" onclick="openItem('index_edit,mb_special,mobile')">首页编辑</a></dd>
-        <dd><a href="javascript:void(0)" onclick="openItem('special_list,mb_special,mobile')">专题设置</a></dd>
-        <dd><a href="javascript:void(0)" onclick="openItem('mb_category_list,mb_category,mobile')">分类图片设置</a></dd>
-        <dd><a href="javascript:void(0)" onclick="openItem('mb_app,mb_app,mobile')">下载设置</a></dd>
-        <dd><a href="javascript:void(0)" onclick="openItem('flist,mb_feedback,mobile')">意见反馈</a></dd>
-        <dd><a href="javascript:void(0)" onclick="openItem('mb_payment,mb_payment,mobile')">手机支付</a></dd>
-         </dl>
-    <dl>
-  <dt>微商城</dt>
-        <dd><a href="javascript:void(0)" onclick="openItem('manage,microshop,microshop')">微商城管理</a></dd>
-        <dd><a href="javascript:void(0)" onclick="openItem('goods_manage,microshop,microshop')">随心看管理</a></dd>
-        <dd><a href="javascript:void(0)" onclick="openItem('goodsclass_list,microshop,microshop')">随心看分类</a></dd>
-        <dd><a href="javascript:void(0)" onclick="openItem('personal_manage,microshop,microshop')">个人秀管理</a></dd>
-        <dd><a href="javascript:void(0)" onclick="openItem('personalclass_list,microshop,microshop')">个人秀分类</a></dd>
-        <dd><a href="javascript:void(0)" onclick="openItem('store_manage,microshop,microshop')">店铺街管理</a></dd>
-        <dd><a href="javascript:void(0)" onclick="openItem('comment_manage,microshop,microshop')">评论管理</a></dd>
-        <dd><a href="javascript:void(0)" onclick="openItem('adv_manage,microshop,microshop')">广告管理</a></dd>
-         </dl>
-    <dl>
+      <dt>手机端</dt>
+      <dd><a href="javascript:void(0)" onclick="openItem('index_edit,mb_special,mobile')">首页编辑</a></dd>
+      <dd><a href="javascript:void(0)" onclick="openItem('special_list,mb_special,mobile')">专题设置</a></dd>
+      <dd><a href="javascript:void(0)" onclick="openItem('mb_category_list,mb_category,mobile')">分类图片设置</a></dd>
+      <dd><a href="javascript:void(0)" onclick="openItem('mb_app,mb_app,mobile')">下载设置</a></dd>
+      <dd><a href="javascript:void(0)" onclick="openItem('flist,mb_feedback,mobile')">意见反馈</a></dd>
+      <dd><a href="javascript:void(0)" onclick="openItem('mb_payment,mb_payment,mobile')">手机支付</a></dd>
+    </dl>
   </div>
 </div>
 <table style="width: 100%;" id="frametable" height="100%" width="100%" cellpadding="0" cellspacing="0">
   <tbody>
     <tr>
-      <td colspan="2" height="90" class="mainhd"><div class="layout-header"> <!-- Title/Logo - can use text instead of image -->
+      <td colspan="2" height="90" class="mainhd">
+        <div class="layout-header"> <!-- Title/Logo - can use text instead of image -->
           <div id="title"><a href="index.php"></a></div>
           <!-- Top navigation -->
           <div id="topnav" class="top-nav">
@@ -368,13 +349,13 @@ function addFavorite(url, title) {
           <nav id="nav" class="main-nav">
             <ul>
            		<li><a class="link actived" id="nav_dashboard" href="javascript:;" onclick="openItem('dashboard');"><span>控制台</span></a></li>
-				<li><a class="link" id="nav_setting" href="javascript:;" onclick="openItem('setting');"><span>设置</span></a></li>
-				<li><a class="link" id="nav_goods" href="javascript:;" onclick="openItem('goods');"><span>商品</span></a></li>
-				<li><a class="link" id="nav_store" href="javascript:;" onclick="openItem('store');"><span>店铺</span></a></li>
-				<li><a class="link" id="nav_member" href="javascript:;" onclick="openItem('member');"><span>会员</span></a></li>
-				<li><a class="link" id="nav_trade" href="javascript:;" onclick="openItem('trade');"><span>交易</span></a></li>
-				<li><a class="link" id="nav_operation" href="javascript:;" onclick="openItem('operation');"><span>运营</span></a></li>
-				<li><a class="link" id="nav_stat" href="javascript:;" onclick="openItem('stat');"><span>统计</span></a></li>
+				      <li><a class="link" id="nav_setting" href="javascript:;" onclick="openItem('setting');"><span>设置</span></a></li>
+      				<li><a class="link" id="nav_goods" href="javascript:;" onclick="openItem('goods');"><span>商品</span></a></li>
+      				<li><a class="link" id="nav_store" href="javascript:;" onclick="openItem('store');"><span>店铺</span></a></li>
+      				<li><a class="link" id="nav_member" href="javascript:;" onclick="openItem('member');"><span>会员</span></a></li>
+      				<li><a class="link" id="nav_trade" href="javascript:;" onclick="openItem('trade');"><span>交易</span></a></li>
+      				<li><a class="link" id="nav_operation" href="javascript:;" onclick="openItem('operation');"><span>运营</span></a></li>
+      				<li><a class="link" id="nav_stat" href="javascript:;" onclick="openItem('stat');"><span>统计</span></a></li>
             </ul>
           </nav>
           <div class="loca"><strong>您的位置:</strong>
@@ -395,12 +376,12 @@ function addFavorite(url, title) {
             </div>
           </div>
         </div>
-        <div > </div></td>
+      </td>
     </tr>
     <tr>
       <td class="menutd" valign="top" width="161">
       	<div id="mainMenu" class="main-menu">
-          
+
           <ul id="sort_dashboard" style="display: block;">
             <li>
             	<a class="selected" id="item_welcome" href="JavaScript:void(0);" onclick="openItem('welcome,dashboard,dashboard');">欢迎页面</a>
@@ -416,7 +397,7 @@ function addFavorite(url, title) {
             </li>
             <li>
             	<a href="JavaScript:void(0);" onclick="openItem('');">订单管理</a>
-            </li>     
+            </li>
           </ul>
           <ul id="sort_setting" style="display: none;">
             <li>
@@ -433,7 +414,7 @@ function addFavorite(url, title) {
             </li>
             <li>
             	<a href="JavaScript:void(0);" onclick="openItem('');">搜索设置</a>
-            </li>    
+            </li>
           </ul>
           <ul id="sort_goods" style="display: none;">
             <li>
@@ -453,7 +434,7 @@ function addFavorite(url, title) {
             </li>
             <li>
             	<a href="JavaScript:void(0);" onclick="openItem('');">搜索设置</a>
-            </li>    
+            </li>
           </ul>
           <ul id="sort_store" style="display: none;">
             <li>
@@ -461,7 +442,7 @@ function addFavorite(url, title) {
             </li>
             <li>
               <a id='item_goods' href="JavaScript:void(0);" onclick="openItem('goods,goods,goods');">店铺等级</a>
-            </li>  
+            </li>
           </ul>
           <ul id="sort_member" style="display: none;">
             <li>
@@ -477,10 +458,10 @@ function addFavorite(url, title) {
             </li>
             <li>
               <a id='item_goods' href="JavaScript:void(0);" onclick="openItem('goods,goods,goods');">退款管理</a>
-            </li>  
+            </li>
             <li>
               <a id='item_goods' href="JavaScript:void(0);" onclick="openItem('goods,goods,goods');">退货管理</a>
-            </li>  
+            </li>
           </ul>
           <ul id="sort_operation" style="display: none;">
           	<li>
@@ -497,7 +478,7 @@ function addFavorite(url, title) {
             </li>
             <li>
               <a id='item_goods' href="JavaScript:void(0);" onclick="openItem('goods,goods,goods');">优惠套装</a>
-            </li>  
+            </li>
             <li>
               <a id='item_goods' href="JavaScript:void(0);" onclick="openItem('goods,goods,goods');">优惠券</a>
             </li>
@@ -517,7 +498,7 @@ function addFavorite(url, title) {
             </li>
             <li>
               <a id='item_goods' href="JavaScript:void(0);" onclick="openItem('goods,goods,goods');">营销分析</a>
-            </li>  
+            </li>
             <li>
               <a id='item_goods' href="JavaScript:void(0);" onclick="openItem('goods,goods,goods');">售后分析</a>
             </li>

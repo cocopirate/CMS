@@ -85,13 +85,13 @@
             <div class="size-44x44">
               <span class="thumb size-44x44">
                 <i></i>
-                <img src="default_user_portrait.gif" style="width:44px;height:44px;"/>
+                <img src="images/default_user_portrait_01.gif" style="width:44px;height:44px;"/>
               </span>
             </div>
           </td>
           <td><p class="name"><strong>l3561350</strong></p>
             <p class="smallfont">注册时间:&nbsp;2017-05-11 11:35:56</p>
-            
+
               <div class="im">
                 <span class="mobile" >
                   <a href="#" class=" yes" title="手机号"></a>
@@ -123,10 +123,3 @@
     </table>
   </form>
 </div>
-<script>
-$(function(){
-    $('#ncsubmit').click(function(){
-      $('input[name="op"]').val('member');$('#formSearch').submit();
-    }); 
-});
-</script>

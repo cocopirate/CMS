@@ -144,21 +144,3 @@
     <div class="system-info"></div>
   </div>
 </div>
-<script type="text/javascript">
-var normal = ['week_add_member','week_add_product'];
-var work = ['store_joinin','store_bind_class_applay','store_reopen_applay','store_expired','store_expire','brand_apply','cashlist','groupbuy_verify_list','points_order','complain_new_list','complain_handle_list', 'product_verify','inform_list','refund','return','vr_refund','cms_article_verify','cms_picture_verify','circle_verify','check_billno','pay_billno','mall_consult','delivery_point','offline'];
-$(document).ready(function(){
-	$.getJSON("index.php?act=dashboard&op=statistics", function(data){
-	  $.each(data, function(k,v){
-		  $("#statistics_"+k).html(v);
-		  if (v!= 0 && $.inArray(k,work) !== -1){
-			$("#statistics_"+k).parent().parent().parent().removeClass('none').addClass('high');
-		  }else if (v == 0 && $.inArray(k,normal) !== -1){
-			$("#statistics_"+k).parent().parent().parent().removeClass('normal').addClass('none');
-		  }
-	  });
-	});
-	//自定义滚定条
-	$('#system-info').perfectScrollbar();
-});
-</script>

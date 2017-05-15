@@ -52,7 +52,7 @@
           </td>
           <td class="vatop tips"></td>
         </tr>
-        
+
       </tbody>
       <tfoot>
         <tr class="tfoot">
@@ -62,11 +62,8 @@
     </table>
   </form>
 </div>
-<script type="text/javascript" src="js_1/dialog/dialog.js" id="dialog_js" charset="utf-8"></script>
-<script type="text/javascript" src="js_1/jquery-ui/jquery.ui.js"></script>
-<script type="text/javascript" src="js_1/ajaxfileupload/ajaxfileupload.js"></script>
-<script type="text/javascript" src="js_1/jquery.Jcrop/jquery.Jcrop.js"></script>
-<link href="js_1/jquery.Jcrop/jquery.Jcrop.min.css" rel="stylesheet" type="text/css" id="cssfile2" />
-<script type="text/javascript">
-
-</script>
+<script type="text/javascript" src="js/dialog/dialog.js" id="dialog_js" charset="utf-8"></script>
+<script type="text/javascript" src="js/jquery-ui/jquery.ui.js"></script>
+<script type="text/javascript" src="js/ajaxfileupload/ajaxfileupload.js"></script>
+<script type="text/javascript" src="js/jquery.Jcrop/jquery.Jcrop.js"></script>
+<link href="js/jquery.Jcrop/jquery.Jcrop.min.css" rel="stylesheet" type="text/css" id="cssfile2" />

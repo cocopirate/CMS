@@ -4,18 +4,18 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge;chrome=1">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>管理后台</title>
-<script type="text/javascript" src="js_1/jquery.js"></script>
-<script type="text/javascript" src="js_1/jquery.validation.min.js"></script>
-<script type="text/javascript" src="js_1/admincp.js"></script>
-<script type="text/javascript" src="js_1/jquery.cookie.js"></script>
-<script type="text/javascript" src="js_1/common.js" charset="utf-8"></script>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="jquery.validation.min.js"></script>
+<script type="text/javascript" src="admincp.js"></script>
+<script type="text/javascript" src="jquery.cookie.js"></script>
+<script type="text/javascript" src="common.js" charset="utf-8"></script>
 <link href="css/skin_0.css" rel="stylesheet" type="text/css" id="cssfile2" />
-<link href="js_1/perfect-scrollbar.min.css" rel="stylesheet" type="text/css">
+<link href="perfect-scrollbar.min.css" rel="stylesheet" type="text/css">
 <link href="css/font/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
 <!--[if IE 7]>
   <link rel="stylesheet" href="css/font/font-awesome/css/font-awesome-ie7.min.css">
 <![endif]-->
-<script type="text/javascript" src="js_1/perfect-scrollbar.min.js"></script>
+<script type="text/javascript" src="perfect-scrollbar.min.js"></script>
 
 <script type="text/javascript">
 SITEURL = '';

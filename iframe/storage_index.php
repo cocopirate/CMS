@@ -144,10 +144,3 @@
     </table>
   </form>
 </div>
-<script>
-$(function(){
-    $('#ncsubmit').click(function(){
-      $('input[name="op"]').val('member');$('#formSearch').submit();
-    }); 
-});
-</script>
