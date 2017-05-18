@@ -50,6 +50,16 @@
     		</tr>
 
         <tr>
+          <td colspan="2" class="required"><label class="validation">收费标准:</label></td>
+        </tr>
+        <tr class="noborder">
+          <td class="vatop rowform">
+            <input type="text" value="0" class="txt">元/年
+          </td>
+          <td class="vatop tips">必须为数字，在会员开通或升级店铺时将显示在前台</td>
+        </tr>
+
+        <tr>
           <td colspan="2" class="required"><label for="skin_limit">店铺权限:</label></td>
         </tr>
         <tr class="noborder">

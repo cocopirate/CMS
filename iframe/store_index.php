@@ -6,7 +6,6 @@
         <li><a href="JavaScript:void(0);" class="current"><span>管理</span></a></li>
         <li><a href="layout.php?op=store_apply"><span>开店申请</span></a></li>
         <li><a href="layout.php?op=store_renewal_apply"><span>续签申请</span></a></li>
-        <li><a href="layout.php?op=store_class_apply"><span>经营类目申请</span></a></li>
         <li><a href="layout.php?op=store_add"><span>新增店铺</span></a></li>
       </ul>
     </div>
@@ -22,7 +21,7 @@
         <th><label for="owner_and_name">店主</label></th>
         <td><input type="text" value="" name="owner_and_name" id="owner_and_name" class="txt"></td>
 
-        <th><label for="store_name">店铺名称</label></th>
+        <th><label for="store_name">店铺</label></th>
         <td><input type="text" value="" name="store_name" id="store_name" class="txt"></td>
 
         <th><label>所属等级</label></th>

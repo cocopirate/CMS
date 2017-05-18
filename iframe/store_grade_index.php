@@ -35,7 +35,7 @@
           <th class="align-center">分销利润上限</th>
           <th class="align-center">自营商品</th>
           <th class="align-center">店铺装修</th>
-          <th>操作</th>
+          <th class="align-center">操作</th>
         </tr>
       </thead>
       <tbody>
@@ -50,7 +50,7 @@
           <td class="align-center">100%</td>
           <td class="align-center">不允许</td>
           <td class="align-center">不允许</td>
-          <td class="w270">
+          <td class="w270 align-center">
             <a href="">编辑</a> | 系统默认不能删除
           </td>
         </tr>
@@ -65,7 +65,7 @@
           <td class="align-center">+10元</td>
           <td class="align-center">不允许</td>
           <td class="align-center">不允许</td>
-          <td class="w270">
+          <td class="w270 align-center">
             <a href="">编辑</a> | <a href="">删除</a>
           </td>
         </tr>
@@ -80,7 +80,7 @@
           <td class="align-center">+5%</td>
           <td class="align-center">不允许</td>
           <td class="align-center">允许</td>
-          <td class="w270">
+          <td class="w270 align-center">
             <a href="">编辑</a> | <a href="">删除</a>
           </td>
         </tr>
@@ -95,7 +95,7 @@
           <td class="align-center">+10%</td>
           <td class="align-center">允许</td>
           <td class="align-center">允许</td>
-          <td class="w270">
+          <td class="w270 align-center">
             <a href="">编辑</a> | <a href="">删除</a>
           </td>
         </tr>
