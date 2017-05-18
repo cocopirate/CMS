@@ -1,10 +1,13 @@
-<?php defined('InShopNC') or exit('Access Invalid!');?>
-
 <div class="page">
   <div class="fixed-bar">
     <div class="item-title">
-      <h3><?php echo $lang['nc_limit_manage'];?></h3>
-      <?php echo $output['top_link'];?>
+      <h3>权限设置</h3>
+      <ul class="tab-base">
+        <li><a href="layout.php?op=admin_index"><span>管理员</span></a></li>
+        <li><a href="layout.php?op=admin_add"><span>添加管理员</span></a></li>
+        <li><a href="layout.php?op=gadmin_index"><span>权限组</span></a></li>
+        <li><a class="current"><span>添加权限组</span></a></li>
+      </ul>
     </div>
   </div>
   <div class="fixed-empty"></div>
@@ -13,7 +16,7 @@
     <table class="table tb-type2 nobdb">
       <tbody>
         <tr class="noborder">
-          <td colspan="2" class="required"><label class="validation" for="admin_name"><?php echo $lang['gadmin_name'];?>:</label></td>
+          <td colspan="2" class="required"><label class="validation" for="admin_name">权限组:</label></td>
         </tr>
         <tr class="noborder">
           <td class="vatop rowform"><input type="text" id="gname" maxlength="40" name="gname" class="txt"></td>
@@ -23,30 +26,108 @@
           <td colspan="2"><table class="table tb-type2 nomargin">
               <thead>
                 <tr class="space">
-                  <th> <input id="limitAll" id="limitAll" value="1" type="checkbox">&nbsp;&nbsp;<?php echo $lang['admin_set_limt'];?></th>
+                  <th> <input id="limitAll" value="1" type="checkbox">&nbsp;&nbsp;设置权限</th>
                 </tr>
               </thead>
               <tbody>
-                <?php foreach((array)$output['limit'] as $k => $v) { ?>
+
                 <tr>
                   <td>
-                  <label style="width:100px"><?php echo (!empty($v['nav'])) ? $v['nav'] : '&nbsp;'; ?></label>
-                  <input id="limit<?php echo $k;?>" type="checkbox" onclick="selectLimit('limit<?php echo $k;?>')">
-                    <label for="limit<?php echo $k;?>"><b><?php echo $v['name'];?></b>&nbsp;&nbsp;</label>
-                      <?php foreach($v['child'] as $xk => $xv) { ?>
-                        <label><input nctype='limit' class="limit<?php echo $k;?>" type="checkbox" name="permission[]" value="<?php echo $xv['op'];?>">
-                        <?php echo $xv['name'];?>&nbsp;</label>
-                      <?php } ?>
-                    </td>
+                    <input id="limit_setting" type="checkbox" onclick="selectLimit('limit_setting')">
+                    <label><b>设置</b>&nbsp;&nbsp;</label>
+                    <label><input class="limit_setting" type="checkbox" >仓储管理&nbsp;</label>
+                    <label><input class="limit_setting" type="checkbox" >配送方式&nbsp;</label>
+                    <label><input class="limit_setting" type="checkbox" >权限管理&nbsp;</label>
+                  </td>
                 </tr>
-                <?php } ?>
+
+                <tr>
+                  <td>
+                    <input id="limit_goods" type="checkbox" onclick="selectLimit('limit_goods')">
+                    <label><b>商品</b>&nbsp;&nbsp;</label>
+                    <label><input class="limit_goods" type="checkbox" >导购分类&nbsp;</label>
+                    <label><input class="limit_goods" type="checkbox" >商品管理&nbsp;</label>
+                    <label><input class="limit_goods" type="checkbox" >类目管理&nbsp;</label>
+                    <label><input class="limit_goods" type="checkbox" >规格管理&nbsp;</label>
+                    <label><input class="limit_goods" type="checkbox" >品牌管理&nbsp;</label>
+                    <label><input class="limit_goods" type="checkbox" >搜索设置&nbsp;</label>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <input id="limit_store" type="checkbox" onclick="selectLimit('limit_store')">
+                    <label><b>店铺</b>&nbsp;&nbsp;</label>
+                    <label><input class="limit_store" type="checkbox" >店铺管理&nbsp;</label>
+                    <label><input class="limit_store" type="checkbox" >店铺等级&nbsp;</label>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <input id="limit_member" type="checkbox" onclick="selectLimit('limit_member')">
+                    <label><b>会员</b>&nbsp;&nbsp;</label>
+                    <label><input class="limit_member" type="checkbox" >会员管理&nbsp;</label>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <input id="limit_trade" type="checkbox" onclick="selectLimit('limit_trade')">
+                    <label><b>会员</b>&nbsp;&nbsp;</label>
+                    <label><input class="limit_trade" type="checkbox" >订单管理&nbsp;</label>
+                    <label><input class="limit_trade" type="checkbox" >发货管理&nbsp;</label>
+                    <label><input class="limit_trade" type="checkbox" >退款管理&nbsp;</label>
+                    <label><input class="limit_trade" type="checkbox" >退货管理&nbsp;</label>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <input id="limit_operation" type="checkbox" onclick="selectLimit('limit_operation')">
+                    <label><b>运营</b>&nbsp;&nbsp;</label>
+                    <label><input class="limit_operation" type="checkbox" >专题管理&nbsp;</label>
+                    <label><input class="limit_operation" type="checkbox" >限时折扣&nbsp;</label>
+                    <label><input class="limit_operation" type="checkbox" >满件优惠&nbsp;</label>
+                    <label><input class="limit_operation" type="checkbox" >满金额优惠&nbsp;</label>
+                    <label><input class="limit_operation" type="checkbox" >优惠套装&nbsp;</label>
+                    <label><input class="limit_operation" type="checkbox" >优惠券&nbsp;</label>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <input id="limit_invoicing" type="checkbox" onclick="selectLimit('limit_invoicing')">
+                    <label><b>进销存</b>&nbsp;&nbsp;</label>
+                    <label><input class="limit_invoicing" type="checkbox" >供应商管理&nbsp;</label>
+                    <label><input class="limit_invoicing" type="checkbox" >库存管理&nbsp;</label>
+                    <label><input class="limit_invoicing" type="checkbox" >大客户管理&nbsp;</label>
+                    <label><input class="limit_invoicing" type="checkbox" >报价单管理&nbsp;</label>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <input id="limit_stat" type="checkbox" onclick="selectLimit('limit_stat')">
+                    <label><b>统计</b>&nbsp;&nbsp;</label>
+                    <label><input class="limit_stat" type="checkbox" >销量分析&nbsp;</label>
+                    <label><input class="limit_stat" type="checkbox" >商品分析&nbsp;</label>
+                    <label><input class="limit_stat" type="checkbox" >会员分析&nbsp;</label>
+                    <label><input class="limit_stat" type="checkbox" >店铺分析&nbsp;</label>
+                    <label><input class="limit_stat" type="checkbox" >营销分析&nbsp;</label>
+                    <label><input class="limit_stat" type="checkbox" >售后分析&nbsp;</label>
+                  </td>
+                </tr>
+
               </tbody>
-            </table></td>
+            </table>
+
+          </td>
         </tr>
       </tbody>
       <tfoot>
         <tr class="tfoot">
-          <td colspan="2"><a href="JavaScript:void(0);" class="btn" id="submitBtn"><span><?php echo $lang['nc_submit'];?></span></a></td>
+          <td colspan="2"><a href="layout.php?op=msg&msgtitle=权限组添加成功&msgtxt=[权限组列表]&url=gadmin_index" class="btn" ><span>提交</span></a></td>
         </tr>
       </tfoot>
     </table>
@@ -61,41 +142,8 @@ function selectLimit(name){
     }
 }
 $(document).ready(function(){
-	//按钮先执行验证再提交表单
-	$("#submitBtn").click(function(){
-	    if($("#add_form").valid()){
-	     $("#add_form").submit();
-		}
-	});
-
 	$('#limitAll').click(function(){
 		$('input[type="checkbox"]').attr('checked',$(this).attr('checked') == 'checked');
-	});
-	
-	$("#add_form").validate({
-		errorPlacement: function(error, element){
-			error.appendTo(element.parent().parent().prev().find('td:first'));
-        },
-        rules : {
-            gname : {
-                required : true,
-				remote	: {
-                    url :'index.php?act=admin&op=ajax&branch=check_gadmin_name',
-                    type:'get',
-                    data:{
-                    	gname : function(){
-                            return $('#gname').val();
-                        }
-                    }
-                }
-            }
-        },
-        messages : {
-            gname : {
-                required : '<?php echo $lang['nc_none_input'];?>',
-                remote	 : '<?php echo $lang['admin_add_admin_not_exists'];?>'
-            }
-        }
 	});
 });
 </script>

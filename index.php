@@ -355,7 +355,8 @@ function addFavorite(url, title) {
       				<li><a class="link" id="nav_member" href="javascript:;" onclick="openItem('member');"><span>会员</span></a></li>
       				<li><a class="link" id="nav_trade" href="javascript:;" onclick="openItem('trade');"><span>交易</span></a></li>
       				<li><a class="link" id="nav_operation" href="javascript:;" onclick="openItem('operation');"><span>运营</span></a></li>
-      				<li><a class="link" id="nav_stat" href="javascript:;" onclick="openItem('stat');"><span>统计</span></a></li>
+              <li><a class="link" id="nav_invoicing" href="javascript:;" onclick="openItem('invoicing');"><span>进销存</span></a></li>
+              <li><a class="link" id="nav_stat" href="javascript:;" onclick="openItem('stat');"><span>统计</span></a></li>
             </ul>
           </nav>
           <div class="loca"><strong>您的位置:</strong>
@@ -390,7 +391,7 @@ function addFavorite(url, title) {
             	<a href="JavaScript:void(0);" onclick="openItem('member_index,member,member');">会员管理</a>
             </li>
             <li>
-            	<a href="JavaScript:void(0);" onclick="openItem('');">店铺管理</a>
+            	<a href="JavaScript:void(0);" onclick="openItem('store_index,store,store');">店铺管理</a>
             </li>
             <li>
             	<a href="JavaScript:void(0);" onclick="openItem('');">商品管理</a>
@@ -404,16 +405,10 @@ function addFavorite(url, title) {
             	<a id='item_storage_index' href="JavaScript:void(0);" onclick="openItem('storage_index,setting,setting');">仓储管理</a>
             </li>
             <li>
-              <a id='item_supplier_index' href="JavaScript:void(0);" onclick="openItem('supplier_index,setting,setting');">供应商管理</a>
-            </li>
-            <li>
               <a id='item_delivery_index' href="JavaScript:void(0);" onclick="openItem('delivery_index,setting,setting');">配送方式</a>
             </li>
             <li>
             	<a id='item_admin_index' href="JavaScript:void(0);" onclick="openItem('admin_index,setting,setting');">权限管理</a>
-            </li>
-            <li>
-            	<a href="JavaScript:void(0);" onclick="openItem('');">搜索设置</a>
             </li>
           </ul>
           <ul id="sort_goods" style="display: none;">
@@ -438,10 +433,10 @@ function addFavorite(url, title) {
           </ul>
           <ul id="sort_store" style="display: none;">
             <li>
-            	<a id='item_test' href="JavaScript:void(0);" onclick="openItem('test,goods,goods');">店铺管理</a>
+            	<a id='item_store_index' href="JavaScript:void(0);" onclick="openItem('store_index,store,store');">店铺管理</a>
             </li>
             <li>
-              <a id='item_goods' href="JavaScript:void(0);" onclick="openItem('goods,goods,goods');">店铺等级</a>
+              <a id='item_store_grade_index' href="JavaScript:void(0);" onclick="openItem('store_grade_index,store,store');">店铺等级</a>
             </li>
           </ul>
           <ul id="sort_member" style="display: none;">
@@ -501,6 +496,20 @@ function addFavorite(url, title) {
             </li>
             <li>
               <a id='item_goods' href="JavaScript:void(0);" onclick="openItem('goods,goods,goods');">售后分析</a>
+            </li>
+          </ul>
+          <ul id="sort_invoicing" style="display: none;">
+            <li>
+              <a id='item_supplier_index' href="JavaScript:void(0);" onclick="openItem('supplier_index,invoicing,invoicing');">供应商管理</a>
+            </li>
+            <li>
+              <a id='item_stock_index' href="JavaScript:void(0);" onclick="openItem('stock_index,invoicing,invoicing');">库存管理</a>
+            </li>
+            <li>
+              <a id='item_KA_index' href="JavaScript:void(0);" onclick="openItem('KA_index,invoicing,invoicing');">大客户管理</a>
+            </li>
+            <li>
+              <a id='item_quotation_index' href="JavaScript:void(0);" onclick="openItem('quotation_index,invoicing,invoicing');">报价单管理</a>
             </li>
           </ul>
         </div>

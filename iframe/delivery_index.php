@@ -126,11 +126,20 @@
       </tbody>
       <tfoot class="tfoot">
         <tr>
-        <td class="w24"><input type="checkbox" class="checkall" id="checkallBottom"></td>
+          <td class="w24"><input type="checkbox" class="checkall" id="checkallBottom"></td>
           <td colspan="16">
-          <label for="checkallBottom">全选</label>
-            &nbsp;&nbsp;<a href="JavaScript:void(0);" class="btn" onclick=""><span>删除</span></a>
-            <div class="pagination"> <ul><li><span>首页</span></li><li><span>上一页</span></li><li><span class="currentpage">1</span></li><li><span>下一页</span></li><li><span>末页</span></li></ul> </div></td>
+            <label for="checkallBottom">全选</label>&nbsp;&nbsp;
+            <a href="JavaScript:void(0);" class="btn" onclick=""><span>删除</span></a>
+            <div class="pagination">
+              <ul>
+                <li><span>首页</span></li>
+                <li><span>上一页</span></li>
+                <li><span class="currentpage">1</span></li>
+                <li><span>下一页</span></li>
+                <li><span>末页</span></li>
+              </ul>
+            </div>
+          </td>
         </tr>
       </tfoot>
     </table>

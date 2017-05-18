@@ -24,14 +24,14 @@
           <td colspan="2" class="required"><label class="validation" >密码:</label></td>
         </tr>
         <tr class="noborder">
-          <td class="vatop rowform"><input type="text" id="member_passwd" name="member_passwd" class="txt"></td>
+          <td class="vatop rowform"><input type="password" id="member_passwd" name="member_passwd" class="txt"></td>
           <td class="vatop tips"></td>
         </tr>
         <tr>
           <td colspan="2" class="required"><label class="validation" >确认密码:</label></td>
         </tr>
         <tr class="noborder">
-          <td class="vatop rowform"><input type="text" id="member_repasswd" name="member_passwd" class="txt"></td>
+          <td class="vatop rowform"><input type="password" class="txt"></td>
           <td class="vatop tips"></td>
         </tr>
         <tr>
