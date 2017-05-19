@@ -413,10 +413,10 @@ function addFavorite(url, title) {
           </ul>
           <ul id="sort_goods" style="display: none;">
             <li>
-            	<a id='item_test' href="JavaScript:void(0);" onclick="openItem('test,goods,goods');">导购分类</a>
+            	<a id='item_goods_class_index' href="JavaScript:void(0);" onclick="openItem('goods_class_index,goods,goods');">导购分类</a>
             </li>
             <li>
-              <a id='item_goods' href="JavaScript:void(0);" onclick="openItem('goods,goods,goods');">商品管理</a>
+              <a id='item_goods_index' href="JavaScript:void(0);" onclick="openItem('goods_index,goods,goods');">商品管理</a>
             </li>
             <li>
               <a href="JavaScript:void(0);" onclick="openItem('');">类目管理</a>

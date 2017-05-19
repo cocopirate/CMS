@@ -40,8 +40,8 @@
         <td>
             <select name="store_type">
                 <option value="">请选择...</option>
-                <option value="">开启</option>
-                <option value="">关闭</option>
+                <option value="">启用</option>
+                <option value="">禁用</option>
                 <option value="">即将到期</option>
                 <option value="">已到期</option>
             </select>
