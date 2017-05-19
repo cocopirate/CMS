@@ -1,7 +1,7 @@
 <div class="page">
   <div class="fixed-bar">
     <div class="item-title">
-      <h3>导购分类</h3>
+      <h3>分类管理</h3>
       <ul class="tab-base">
         <li><a href="layout.php?op=goods_class_index"><span>管理</span></a></li>
         <li><a href="JavaScript:void(0);" class="current"><span>新增</span></a></li>
@@ -75,7 +75,7 @@
       </tbody>
       <tfoot>
         <tr>
-          <td colspan="2"><a href="layout.php?op=msg&msgtitle=导购分类添加成功&msgtxt=[导购分类列表]&url=goods_class_index" class="btn" id="submitBtn"><span>提交</span></a></td>
+          <td colspan="2"><a href="layout.php?op=msg&msgtitle=分类添加成功&msgtxt=[分类列表]&url=goods_class_index" class="btn" id="submitBtn"><span>提交</span></a></td>
         </tr>
       </tfoot>
     </table>

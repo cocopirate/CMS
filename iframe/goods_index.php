@@ -10,7 +10,6 @@
         <li><a href="JavaScript:void(0);" class="current"><span>所有商品</span></a></li>
         <li><a href="" ><span>下架商品</span></a></li>
         <li><a href=""><span>等待审核</span></a></li>
-        <li><a href=""><span>商品设置</span></a></li>
         <li><a href=""><span>新增</span></a></li>
       </ul>
     </div>

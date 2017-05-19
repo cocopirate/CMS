@@ -413,22 +413,22 @@ function addFavorite(url, title) {
           </ul>
           <ul id="sort_goods" style="display: none;">
             <li>
-            	<a id='item_goods_class_index' href="JavaScript:void(0);" onclick="openItem('goods_class_index,goods,goods');">导购分类</a>
+            	<a id='item_goods_class_index' href="JavaScript:void(0);" onclick="openItem('goods_class_index,goods,goods');">分类管理</a>
             </li>
             <li>
               <a id='item_goods_index' href="JavaScript:void(0);" onclick="openItem('goods_index,goods,goods');">商品管理</a>
             </li>
             <li>
-              <a href="JavaScript:void(0);" onclick="openItem('');">类目管理</a>
+              <a id='item_goods_type_index' href="JavaScript:void(0);" onclick="openItem('goods_type_index,goods,goods');">类型管理</a>
             </li>
             <li>
-            	<a href="JavaScript:void(0);" onclick="openItem('');">规格管理</a>
+            	<a id='item_goods_spec_index' href="JavaScript:void(0);" onclick="openItem('goods_spec_index,goods,goods');">规格管理</a>
             </li>
             <li>
-            	<a href="JavaScript:void(0);" onclick="openItem('');">品牌管理</a>
+            	<a id='item_goods_brand_index' href="JavaScript:void(0);" onclick="openItem('goods_brand_index,goods,goods');">品牌管理</a>
             </li>
             <li>
-            	<a href="JavaScript:void(0);" onclick="openItem('');">搜索设置</a>
+            	<a id='item_goods_setting' href="JavaScript:void(0);" onclick="openItem('goods_setting,goods,goods');">商品设置</a>
             </li>
           </ul>
           <ul id="sort_store" style="display: none;">

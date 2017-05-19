@@ -1,7 +1,7 @@
 <div class="page">
   <div class="fixed-bar">
     <div class="item-title">
-      <h3>导购分类</h3>
+      <h3>分类管理</h3>
       <ul class="tab-base">
         <li><a href="JavaScript:void(0);" class="current"><span>管理</span></a></li>
         <li><a href="layout.php?op=goods_class_add" ><span>新增</span></a></li>
