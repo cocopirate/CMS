@@ -88,7 +88,12 @@ h6 { font-size:12px;}
 .red {color: red;}
 .blue { color: #06C;}
 .orange { color: #F60;}
+.gray {color: #999;}
 .bold {font-weight: bold; color: #545454}
+
+.fl {float: left;}
+.fr {float: right;}
+.clear {clear: both;}
 
 /* tip提示 */
 .tip-yellowsimple { color:#000; background-color:#fff9c9; text-align:left; min-width:50px; max-width:300px; border:1px solid #c7bf93; border-radius:4px; -moz-border-radius:4px; -webkit-border-radius:4px; z-index:1000; padding:6px 8px;}
@@ -882,7 +887,7 @@ label.validation{font-weight:700; background: url(../images/mac/bg_position.png)
 .home-templates-board-layout .middle-banner a.bottom-c { bottom: 0; right: 119px;}
 .home-templates-board-layout .middle-banner a.bottom-d { bottom: 0; right: 0;}*/
 .home-templates-board-layout .middle-banner a.middle-a,.home-templates-board-layout .middle-banner a.right-a,.home-templates-board-layout .middle-banner a.right-b { display:none}
-/*首页楼层横幅*/ 
+/*首页楼层横幅*/
 .home-templates-board-layout .footer-banner{ float:left; width:953px; height:120px; margin-top:10px;}
 .home-templates-board-layout .picture  { width: 937px; height: 71px; overflow:hidden;}
 .home-templates-board-layout dd.banner-pic .picture img { max-width: 953px; }
@@ -1491,6 +1496,17 @@ td.trigger i:hover { color: #27A9E3;}
 .ncsc-goods-sku-list .goods-storage em { color: #27A9E3}
 
 
+/*发货列表页-商品清单显示部分*/
+.delivery-goods.ps-container { background-color: #FCFCFC; text-align: left; padding-bottom: 3px; border: solid 1px #E6E6E6;  position: relative; z-index: 1; overflow: hidden; box-shadow: 2px 2px 0 rgba(204,204,204,0.1);}
+.delivery-goods-list { font-size: 0; *word-spacing:-1px/*IE6、7*/; white-space: nowrap; *display: inline; zoom: 1; overflow: hidden;}
+.delivery-goods-list li { font-size: 12px;height: 64px;vertical-align: top; letter-spacing: normal; word-spacing: normal; *display: inline; padding: 10px; margin-left: -1px; *zoom: 1; border-bottom: dashed 1px #E6E6E6;}
+.delivery-goods-list .goods-thumb { background-color: #FFF; width: 60px; height: 60px; padding: 1px; border: solid 1px #E6E6E6; margin: 0 auto 5px auto;}
+.delivery-goods-list .goods-thumb a { line-height: 0; text-align: center; vertical-align: middle; display: table-cell; *display: block; width: 60px; height: 60px; overflow: hidden;}
+.delivery-goods-list .goods-thumb a img { max-width: 60px; max-height: 60px; margin-top:expression(60-this.height/2); *margin-top:expression(30-this.height/2)/*IE6,7*/;}
+
+.delivery-goods-list span { font-size: 12px; color: #FFF; background-color: #CCC; vertical-align: middle; display: inline-block; *display: inline/*IE6,7*/; padding: 1px 5px; margin-right: 5px; border-radius: 2px; overflow: hidden; *zoom:1/*IE7*/; cursor: default;}
+.delivery-goods-list span.virtual { background-color: #3598DC;}
+
 /*满即送详情列表处规则样式*/
 .mansong-rule-list {}
 .mansong-rule-list li { color: #3A87AD; filter:progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#3FD9EDF7', endColorstr='#3FD9EDF7');background:rgba(217,237,247,0.25); border: dashed 1px #BCE8F1; padding: 4px 9px; margin-bottom: 10px;}
@@ -1664,7 +1680,7 @@ td.trigger i:hover { color: #27A9E3;}
 .mb-item-edit-content .item:hover { border: solid 1px #19AEDE; box-shadow: 0 0 6px rgba(0,0,0,0.25);}
 .mb-item-edit-content .item a { color: #FFF; background-color: #19AEDE; display: none; padding: 4px 8px; position: absolute; z-index: 1; top: 4px; right: 4px; cursor: pointer;}
 .mb-item-edit-content .item a i { font-size: 14px; margin-right: 4px;}
-.mb-item-edit-content .item:hover a { display: block;}	
+.mb-item-edit-content .item:hover a { display: block;}
 .mb-item-edit-content .btn-add { font-size: 12px; margin: 10px;}
 
 /* 广告条编辑、块模型布局A-编辑 */

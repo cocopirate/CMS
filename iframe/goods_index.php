@@ -161,7 +161,7 @@
           <td>
             <dl class="goods-info"><dt class="goods-name">ROSETTE/诗留美屋蓝泥洁面乳洗面奶清洁毛孔蓝色洗面奶*2件装</dt>
               <dd class="goods-type">
-                <!-- <span class="presell" title="预先发售商品">预售</span> -->
+                <span class="presell" title="预先发售商品">预售</span>
                 <i class="icon-tablet" title="手机端商品详情"></i>
               </dd>
               <dd class="goods-store">所属店铺：自营店铺</dd>

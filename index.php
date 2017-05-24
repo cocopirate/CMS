@@ -446,16 +446,16 @@ function addFavorite(url, title) {
           </ul>
           <ul id="sort_trade" style="display: none;">
             <li>
-            	<a id='item_test' href="JavaScript:void(0);" onclick="openItem('test,goods,goods');">订单管理</a>
+            	<a id='item_trade_order_index' href="JavaScript:void(0);" onclick="openItem('trade_order_index,trade,trade');">订单管理</a>
             </li>
             <li>
-            	<a id='item_test' href="JavaScript:void(0);" onclick="openItem('test,goods,goods');">发货管理</a>
+            	<a id='item_trade_delivery_index' href="JavaScript:void(0);" onclick="openItem('trade_delivery_index,trade,trade');">发货管理</a>
             </li>
             <li>
-              <a id='item_goods' href="JavaScript:void(0);" onclick="openItem('goods,goods,goods');">退款管理</a>
+              <a id='item_trade_refund_index' href="JavaScript:void(0);" onclick="openItem('trade_refund_index,trade,trade');">退款管理</a>
             </li>
             <li>
-              <a id='item_goods' href="JavaScript:void(0);" onclick="openItem('goods,goods,goods');">退货管理</a>
+              <a id='item_trade_return_index' href="JavaScript:void(0);" onclick="openItem('trade_return_index,trade,trade');">退货管理</a>
             </li>
           </ul>
           <ul id="sort_operation" style="display: none;">
